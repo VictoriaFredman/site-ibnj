@@ -1,0 +1,92 @@
+import { Facebook, Instagram, Youtube, Mail } from 'lucide-react';
+
+export function Footer() {
+  return (
+    <footer className="bg-blue-950 text-white py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
+          {/* About */}
+          <div>
+            <h3 className="text-2xl mb-4">IBNJ</h3>
+            <p className="text-blue-200 mb-4">
+              Transformando vidas através do amor de Cristo há mais de 30 anos.
+            </p>
+            <div className="flex gap-4">
+              <a 
+                href="#" 
+                className="bg-blue-900 p-2 rounded-lg hover:bg-blue-800 transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook size={20} />
+              </a>
+              <a 
+                href="#" 
+                className="bg-blue-900 p-2 rounded-lg hover:bg-blue-800 transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram size={20} />
+              </a>
+              <a 
+                href="#" 
+                className="bg-blue-900 p-2 rounded-lg hover:bg-blue-800 transition-colors"
+                aria-label="YouTube"
+              >
+                <Youtube size={20} />
+              </a>
+              <a 
+                href="#" 
+                className="bg-blue-900 p-2 rounded-lg hover:bg-blue-800 transition-colors"
+                aria-label="E-mail"
+              >
+                <Mail size={20} />
+              </a>
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-xl mb-4">Links Rápidos</h3>
+            <ul className="space-y-2">
+              <li>
+                <a href="#sobre" className="text-blue-200 hover:text-white transition-colors">
+                  Sobre Nós
+                </a>
+              </li>
+              <li>
+                <a href="#ministerios" className="text-blue-200 hover:text-white transition-colors">
+                  Ministérios
+                </a>
+              </li>
+              <li>
+                <a href="#eventos" className="text-blue-200 hover:text-white transition-colors">
+                  Eventos
+                </a>
+              </li>
+              <li>
+                <a href="#contato" className="text-blue-200 hover:text-white transition-colors">
+                  Contato
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-xl mb-4">Contato</h3>
+            <ul className="space-y-2 text-blue-200">
+              <li>Rua da Esperança, 123</li>
+              <li>Centro - São Paulo, SP</li>
+              <li>CEP: 01234-567</li>
+              <li className="pt-2">(11) 1234-5678</li>
+              <li>contato@igrejacomunidade.com.br</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="border-t border-blue-900 pt-8 text-center text-blue-200">
+          <p>&copy; 2026 IBNJ. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  );
+}
